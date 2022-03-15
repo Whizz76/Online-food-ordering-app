@@ -1,0 +1,42 @@
+#filter{
+    width:15vw;
+    height: 700px;
+    padding: 16px;
+    margin: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.3);
+    background-color: white!important;
+    color: #192f60 !important;
+
+}
+
+#fiter select{
+    cursor: pointer;
+}
+#filter label{
+    margin-left: 10px;
+    cursor: pointer;
+}
+#filter h5{
+    margin-top: 20px;
+}
+@media (max-width:1200px) and (min-width:900px){
+    #filter{
+        width: 20vw;
+    }
+}
+@media (max-width:900px){
+    #filter{
+        width: 25vw;
+    }
+}
+@media (max-width:780px){
+    #filter label{
+        font-size: 80%;
+    }
+}
+@media (max-width:630px){
+    #filter{
+        display: none;
+    }
+    
+}

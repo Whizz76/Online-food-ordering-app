@@ -1,0 +1,10 @@
+#filterandrest{
+    display: flex;
+    justify-content: space-between;
+    
+}
+@media (max-width:630px){
+    #filterandrest{
+        justify-content: center;
+    }
+}

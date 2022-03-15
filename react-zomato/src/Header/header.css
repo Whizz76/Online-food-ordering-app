@@ -1,0 +1,409 @@
+
+.upper{
+    height: 450px;
+        background-image: url("./home.png");
+       box-shadow: -90px -140px 800px #4f0707 inset;
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    
+        
+    
+       
+    }
+    a{
+        display: inline-block;
+        text-decoration: none!important;
+    }
+    body{
+        background-color:#fff0f5!important;
+    }
+    #restlogo{
+        display: inline-block;
+        height: 90px;
+        width: 90px;
+        background-color: white;
+        color: orangered;
+        font-size: 350%;
+        font-weight: 600;
+        border-radius: 100px;
+        margin-left: auto;
+        margin-right: auto;
+       
+        text-align: center;
+        
+        
+    }
+    #login,#account{
+        color: white;
+        border: 2px solid white;
+        padding: 10px;
+        font-size: 110%;
+        border-radius: 5px;
+        font-weight: 400;
+        height: 50px;
+        width: 200px;
+        text-align: center;
+        margin-top: 15px;
+    
+    }
+    #login{
+        border: none!important;
+    }
+    .lo{
+        height: 80px;
+    }
+    #account{
+        margin-right: 20px;
+    }
+    #login{
+        margin-right: 15px;
+    }
+    .restlogo{
+      position: relative;
+      top: -60px;
+    }
+    #tag{
+        position: relative;
+      top: -80px;
+        font-size: 300%;
+        color: white;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .container{
+        margin-top: 15px;
+        /*margin-left: auto!important;
+        margin-right: auto!important;*/
+       
+    }
+    #hi{
+        padding-top: 10px;
+        font-size: 110%;
+        padding-bottom: 20px;
+    }
+    .cola{
+        background-color:white;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+        height: 150px;
+        margin-left:30px;
+        padding-left: 0px !important;
+       margin-right:30px;
+        margin-bottom: 70px;
+        
+    
+        
+    }
+    a{
+        display: block;
+    }
+    .side{
+        cursor: pointer;
+    }
+    
+    .image{
+        padding-left: 0!important;
+    }
+    #image{
+        height: 150px;
+        width: 110px;
+    
+    }
+    /*
+    .container h1,.container p{
+       padding-left: 80px;
+    }*/
+    /*.xy{
+        position: relative;
+        left: 90px;
+    }*/
+    .cola .break{
+        display: inline-block;
+        padding-top: 5px;
+        padding-left: 15px;
+        position: relative;
+       /* top: -40px;*/
+        font-weight: bolder;
+    }
+    .cola .sen{
+        display: inline-block;
+        padding-top: 5px;
+        padding-left: 15px;
+    /* position: relative;
+    width: 130px;
+        top: -100px;
+        left: 120px;*/
+        font-size: 80%;
+    }
+    .btn{
+        background-color: white!important;
+        color: grey!important;
+        border-radius: 0!important;
+        height: 50px!important;
+        position: relative;
+        top: -80px;
+    
+    
+    }
+    /*
+    .first{
+        margin-left: auto;
+    }
+    .second{
+        margin-right: auto;
+        margin-left: 10px;
+    }
+    .fourth{
+        width: 500px!important;
+    }
+    .third{
+      width: 300px!important;  
+    }*/
+    .box{
+        height: 40px;
+        background-color: white;
+        color: grey;
+       border: none;
+        text-align: center;
+        position: relative;
+        top: -80px;
+    }
+    .xa,.xb{
+        display: inline-block;
+    }
+    .xa{
+        margin-left: auto;
+        margin-right: 10px;
+    
+    }
+    .xb{
+        margin-right: auto;
+    }
+    /*
+    .xy{
+        position: relative;
+        left: 25px;
+    }*/
+    /*.first{
+        margin-left: 200px;
+        margin-right: 10px;
+    }*/
+    
+    /*.upper image{
+        height: 400px;
+        width: 4169px;
+    }*/
+    @media (max-width: 1400px) and (min-width: 951px){
+        #login,#account{
+            font-size: 90%;
+        }
+    }
+    @media (max-width: 951px) and (min-width: 650px){
+        #tag{
+            font-size: 200%;
+        }
+        #login,#account{
+            font-size: 80%;
+            height: 40px;
+        }
+    }
+    @media (max-width: 370px) and (min-width: 200px){
+        .cola{
+            height: 130px;
+    
+        }
+        #hi{
+            font-size: 90%;
+        }
+        #image{
+        height: 130px;
+        width: 90px;
+    
+    }
+    .cola .sen{
+        font-size: 60%;
+        padding-top: 0;
+    }
+    .cola .break{
+        font-size: 90%;
+        margin-top: 10px;
+    }
+    }
+    /*
+    @media (max-width: 768px) and (min-width: 550px){
+        .sen{
+            position: relative!important;
+            top: 25px!important;
+            left: -95px!important;
+            width: 200px!important;
+            
+        }
+        .break{
+            font-size: 18px;
+        }
+    }*/
+    @media (max-width: 650px) and (min-width: 570px){
+        #tag{
+            font-size: 160%;
+        }
+        #login,#account{
+            font-size: 80%;
+            height: 40px;
+        }
+    }
+    
+    @media (max-width: 576px) and (min-width: 100px){
+        .xa,.xb{
+            margin-right: auto!important;
+            margin-left: auto!important;
+        }
+        .cola{
+            margin-left: 20px!important;
+         
+        }
+    }
+    @media (max-width: 570px) and (min-width: 487px){
+         #tag{
+            font-size: 140%;
+        }
+        #login,#account{
+            font-size: 65%;
+            height: 30px;
+            padding-top: 5px;
+        }
+    
+    }
+    @media (max-width: 487px) and (min-width: 400px){
+         #tag{
+            font-size: 120%;
+        }
+        #login{
+            font-size: 65%;
+            height: 30px;
+            padding-top: 5px;
+            padding-left: 2px;
+        }
+        #account{
+            font-size: 60%;
+            height: 30px;
+            padding-top: 5px;
+            padding-left: 4px;
+        }
+    
+    
+    }
+    
+    @media (max-width: 400px) and (min-width: 350px){
+         #tag{
+            font-size: 100%;
+        }
+        #login{
+            font-size: 65%;
+            height: 30px;
+            padding-top: 5px;
+            padding-left: 2px;
+        }
+        #account{
+            font-size: 60%;
+            height: 30px;
+            padding-top: 5px;
+            padding-left: 4px;
+        }
+    
+    
+    }
+    @media (max-width: 350px) and (min-width: 256px){
+         #tag{
+            font-size: 100%;
+        }
+        .blank{
+            max-width: 55%!important;
+        }
+        #login{
+            font-size: 65%;
+            height: 30px;
+            padding-top: 5px;
+            padding-left: 2px;
+            max-width: 10%;
+            margin-left: 5px;
+        }
+        .lo{
+            padding-right: 5px!important;
+        }
+        #account{
+            font-size: 60%;
+            height: 30px;
+            padding-top: 5px;
+            padding-left: 4px;
+            max-width: 35%!important;
+            margin-left: 10px;
+    
+        }
+    }
+    
+    /*
+    @media (max-width: 550px) and (min-width: 100px){
+        .sen{
+            position: relative!important;
+            top: 20px!important;
+            left: -75px!important;
+            width: 100px!important;
+            
+        }
+        .break{
+            font-size: 18px;
+        }
+    }*/
+    @media(max-width: 330px) and (min-width: 100px){
+        .cola{
+            max-width: 85%!important;
+        }
+        #tag{
+            font-size: 85%!important;
+            display: inline-block!important;
+    
+        }
+        .upper{
+            height: 400px!important;
+            background-image: url(Table.png);
+        }
+    }
+    @media (max-width: 600px) and (min-width: 576px){
+        .cola{
+            margin-left: 20px!important;
+        }
+    }
+    @media (max-width: 256px) and (min-width: 100px){
+         #tag{
+            font-size: 80%!important;
+        }
+        .blank{
+            max-width: 40%!important;
+        }
+        #login{
+            font-size: 65%;
+            height: 30px;
+            padding-top: 5px;
+            padding-left: 2px;
+            max-width: 10%;
+            margin-left: 5px;
+        }
+        .lo{
+            padding-right: 5px!important;
+        }
+        #account{
+            font-size: 60%;
+            height: 40px;
+            padding-top: 5px;
+            padding-left: 4px;
+            max-width: 40%!important;
+            margin-left: 10px;
+    
+        }
+        .restlogo{
+            top: -40px!important;
+            margin-bottom: 30px;
+        }
+    }
+    
