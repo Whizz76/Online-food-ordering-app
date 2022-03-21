@@ -3,7 +3,7 @@ async function filterRestaurant(req,res){
     let{mealtype,cuisine,location,lcost,hcost,page,sort}=req.body;
     page=page?page:1;
     sort=sort?sort:1;
-    let pay={};
+    let pay={}; 
     const itpp=2;
     let st=itpp*page-itpp;
     let en=itpp*page;
