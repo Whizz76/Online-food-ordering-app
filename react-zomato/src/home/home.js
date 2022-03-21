@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import Card from '../Restaurant/card';
 import Navbar from '../navbar/navbar';
 import Filter from '../Filter/filter';
+import Loading from '../Loading/loading';
+import Endload from '../endLoad/endLoad';
 import './home.css';
 import Enterdata from '../data/data';
 import { useParams } from 'react-router-dom';
@@ -9,7 +11,10 @@ function Home(){
     var {e}=useParams();
     var [restaurants,setRestaurants]=useState([]);
     var [location,setLocation]=useState([]);
+    const [completed,Setcompleted]=useState(undefined);
+    const [l,Setl]=useState(undefined);
     //var restname;
+    
     var [restname,setRestName]= useState([]);
     const options={
         method:'get',
@@ -24,8 +29,14 @@ function Home(){
 		.then((result)=>{
 			result=result.filter(r=>r.name);
 			setRestaurants(result);
+            Setcompleted(true);
+            
 		});
 	},[]);
+    setTimeout(()=>{
+        Setl(true);
+    },30000);
+   
     function filterRestaurantByLocation(event){
         location=(event.target.value).charAt(0).toUpperCase()+(event.target.value).slice(1);
         //location=location.charAt(0).toUpperCase()+restname.slice(1);
@@ -73,9 +84,66 @@ function Home(){
 
     return(
         <>
-        <Navbar/>
+        {!completed ?(
+            <>
+            {!l?(
+                <>
+                <Loading/>
+                </>
+            ):(
+                <>
+            <Endload/>
+            </>)}
+            </>
+        ):(
+            <>
+            <Navbar/>
+            <div id="filterandrest">
+           
+           <div>
+               <Filter />
+         </div>
+             
+           <div>
+             
+             {
+                 restaurants.length>0 && restaurants.map(r=>
+                     <Card item={r}/>) 
+     
+             }
+             </div>
+             </div>
+            </>
+        )}
+        {/*{!completed ?(
+            <>
+            <Loading/>
+            </>
+        ):(
+            <>
+            <Navbar/>
+            <div id="filterandrest">
+           
+           <div>
+               <Filter />
+         </div>
+             
+           <div>
+             
+             {
+                 restaurants.length>0 && restaurants.map(r=>
+                     <Card item={r}/>) 
+     
+             }
+             </div>
+             </div>
+            </>
+            )}*/}
+        {/*<Navbar/>*/}
         {/*<Enterdata change={(event)=>filterRestaurantByLocation(event)}  changeIt={(event)=>filterRestaurantByName(event)} />*/}
-        <div id="filterandrest">
+       
+        
+       {/* <div id="filterandrest">
            
       <div>
           <Filter />
@@ -89,8 +157,9 @@ function Home(){
 
         }
         </div>
-      </div>
-        
+    </div>*/}
+      
+       
         </>
     );
 }

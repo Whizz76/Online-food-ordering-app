@@ -16,7 +16,7 @@ function Card(props){
 		
 
 
-	<a href='' onClick={()=>redirectDetail(restaurants._id)}>
+	<a href='' onClick={()=>redirectDetail(restaurants._id)} key={restaurants._id}>
 		<div id="restoCard">
 			<div id="firstRow">
 				<div id="frfp"><img src={restaurants.thumb} alt="food image loading..." />
